@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.ltop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
+.ltleft i {
+  opacity: 0.5;
+}
+
+.ltright {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.ltright a {
+  color: black;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+.lbottom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lbottom h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.lbottom p {
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.lbottom a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  opacity: 0.6;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+}
+
+.rtop {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+.rtleft {
+  width: 55%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJ1aXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+ 
+.rtright {
+  width: 45%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZydWl0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+.rbottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://images.unsplash.com/photo-1552010099-5dc86fcfaa38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #main #left {
+    width: 100%;
+  }
+
+  #main #right {
+    width: 100%;
+  }
+}
